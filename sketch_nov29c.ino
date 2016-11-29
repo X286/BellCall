@@ -31,7 +31,7 @@ void loop() {
   if(stateButton == 1) { //if is pressed
     
      for (int thisNote = 0; thisNote < 448; thisNote++) { 
-        4333333333333333333333333333333333333333rstateButton = digitalRead(pinButton); 
+        stateButton = digitalRead(pinButton); 
         if(stateButton == 0) { break;}
         tone(8, melody[thisNote], noteDurations[thisNote]);
         // to distinguish the notes, set a minimum time between them.
